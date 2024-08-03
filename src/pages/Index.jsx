@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
+import confetti from 'canvas-confetti';
 
 const Index = () => {
   const [count, setCount] = useState(0);
@@ -16,7 +17,8 @@ const Index = () => {
         <div className="mb-4">
           <p>Count: {count}</p>
           <Button onClick={() => setCount(count + 1)} className="mr-2">Increment</Button>
-          <Button onClick={() => setCount(count - 1)} variant="outline">Decrement</Button>
+          <Button onClick={() => setCount(count - 1)} variant="outline" className="mr-2">Decrement</Button>
+          <Button onClick={() => confetti()} variant="secondary">Celebrate!</Button>
         </div>
       </main>
 
