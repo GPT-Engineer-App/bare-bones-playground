@@ -19,10 +19,6 @@ const Index = () => {
           <Button onClick={() => setCount(count - 1)} variant="outline">Decrement</Button>
         </div>
       </main>
-
-      <footer className="bg-secondary text-secondary-foreground p-4 text-center">
-        <p>&copy; 2024 My Bare-Bones App. All rights reserved.</p>
-      </footer>
     </div>
   );
 };
